@@ -1,0 +1,130 @@
+body{
+    background-color: rgba(255, 192, 203, 0.5);
+    caret-color: transparent;
+}
+hr{
+    color: palevioletred;
+}
+nav{
+    height: 40px;
+}
+.navd{
+    width: 60%;
+}
+.logo__p{
+    font-family: 'Mooli', sans-serif;
+    color: rgb(255, 167, 182);
+}
+.navdrop{
+    position: relative;
+}
+.navdrop ul{
+    position: absolute;
+    background-color: #f6f6f6;
+    width: 175px;
+    right: -5px;
+    top: 30px;
+    display: none;
+}
+.navdrop ul::before{
+    content: "";
+    border-color: transparent transparent #f6f6f6 transparent;
+    border-style: solid;
+    border-width: 16px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    right: 0px;
+    top: -32px;
+}
+.navdrop ul li{
+    border-bottom: rgb(0, 0, 0 ,.3) 1px solid;
+}
+.navi:hover{
+    font-size: 1.7rem!important;
+}
+.navi:hover + .navu{
+    display: block;
+}
+.navu:hover{
+    display: block;
+}
+.navu a:hover{
+    transform: translate(10px);
+    -webkit-transform: translate(10px);
+    -moz-transform: translate(10px);
+    -ms-transform: translate(10px);
+    -o-transform: translate(10px);
+    transition-duration: .5s;
+}
+.logo__img__Con{
+   width: 60%;
+   padding: 40px 0px 0px;
+   margin: 0px auto;
+}
+.logo__img__img{
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+div[class^="ms"]{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.msfeatures div[class ^= "d"]{
+    padding: 20px;
+}
+.msfeatures div[class ^= "d"] svg{
+    font-size: 53px;
+    padding-bottom: 20px;
+}
+.fp2 {
+    font-size: 17px;
+    line-height: 28px;
+}
+.secpcon .mp{
+    font-size: 100px;
+    color: rgb(255, 167, 182);
+    margin: 0px;
+    letter-spacing: -4px;
+}
+
+.secsercon{
+    margin-top: 100px!important;
+}
+
+
+@media (min-width: 992px){
+    .product img{
+        height: 209PX;
+    }
+    .product{
+        width: 23%!important;
+        cursor: pointer;
+    }
+    .product:hover{
+        width: 30%!important;
+    }
+    .product:hover img{
+        height: 230PX ;
+    }
+    
+}
+@media (min-width: 768px) and (max-width:992px){
+    .product img{
+        height: 209PX;
+    }
+    .product{
+        width: 30.33333%!important;
+        cursor: pointer;
+    }
+    .product:hover{
+        width: 37%!important;
+    }
+    .product:hover img{
+        height: 230PX ;
+    }
+    
+}
